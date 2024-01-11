@@ -2,6 +2,39 @@
     Problem 7. Using Forms
     Problem Statement:
     Create a form with different input types 
-    (text, password, checkbox, radio button) and a 
+    (text, password, checkbox, radio button, date) and a 
     submit button.
 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Forms</title>
+  </head>
+  <body>
+    <form>
+      <label for="uname">User name:</label><br />
+      <input type="text" id="uname" name="uname" /><br />
+      <label for="email">Enter your E-mail:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="password">Enter your Password:</label><br />
+      <input type="password" id="password" name="password" /><br />
+      <input type="radio" id="html" name="fav_lang" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_lang" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input type="radio" id="js" name="fav_lang" value="JAVASCRIPT" />
+      <label for="js">JAVASCRIPT</label><br />
+      <input type="checkbox" id="chkbox" name="car" value="CAR" />
+      <label for="checkbox">I HAVE A CAR</label><br />
+      <label for="DOB">Date Of Birth:</label><br />
+      <input type="date" id="DOB" name="D0B" /><br />
+      <input type="checkbox" id="chkbox" name="car" value="CAR" />
+      <label for="checkbox">I HAVE A CAR</label><br />
+      <input type="checkbox" id="chkbox" name="bike" value="BIKE" />
+      <label for="checkbox">I HAVE A BIKE</label><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
