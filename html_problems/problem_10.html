@@ -2,4 +2,69 @@
     Problem 10. Creating a Navigation Bar
     Problem Statement:
     Build a simple navigation bar using a list.
+    
+    - Home
+    - Problem 1 HTML
+    - Problem 1 CSS
+    - Cabbuddy  - https://cabbuddy.app
+    - Contact - In page section form
+
+    Section 1 - paragrah
+     - Lorem Ipsum
+    Section 2 - paragraph
+     - Lorem Ipsum
+    Contact - heading
+     - Form
 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating a Navigation Bar</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="./problem_1.html ">Problem-1 HTML</a></li>
+        <li><a href="../css_problems/problem_1.html">Problem-1 CSS</a></li>
+        <li><a target="_blank" href="https://cabbuddy.app">Cabbuddy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h2 class="section-1">What is HTML ?</h2>
+    <p>
+      HTML stands for Hyper Text Markup Language HTML is the standard markup
+      language for creating Web pages HTML describes the structure of a Web page
+      HTML consists of a series of elements HTML elements tell the browser how
+      to display the content HTML elements label pieces of content such as "this
+      is a heading", "this is a paragraph", "this is a link", etc.
+    </p>
+    <img src="./img_1.png" alt="web development img" />
+
+    <h2 class="section-2">What is CSS ?</h2>
+    <p>
+      CSS stands for Cascading Style Sheets CSS describes how HTML elements are
+      to be displayed on screen, paper, or in other media CSS saves a lot of
+      work. It can control the layout of multiple web pages all at once External
+      stylesheets are stored in CSS files
+    </p>
+    <img src="./img_2.png" alt="lady working on laptop" />
+
+    <h2 class="section-3">JAVASCRIPT</h2>
+    <p>
+      JavaScript is the world's most popular programming language. JavaScript is
+      the programming language of the Web. JavaScript is easy to learn. This
+      tutorial will teach you JavaScript from basic to advanced.
+    </p>
+
+    <h1 id="contact">contact</h1>
+    <form>
+      <label for="Uname">USERNAME:</label><br />
+      <input type="text" id="uname" name="username" /><br />
+      <label for="email">E-MAIL ID:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="tel">TELEPHONE :</label><br />
+      <input type="tel" id="tel" name="telephone" /><br />
+    </form>
+  </body>
+</html>
