@@ -12,3 +12,44 @@
         padding of 20px, a border of 5px solid black, 
         and a margin of 15px. Inside, place some text.
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Box Model</title>
+    <style>
+      body {
+        background-color: #fff;
+      }
+      div {
+        width: 500px;
+        padding: 20px;
+        border: 15px solid black;
+        margin: 35px;
+        background-color: rgb(56, 56, 199);
+        border-radius: 50px;
+        box-shadow: 19px 15px 13px 5px #bc5555;
+      }
+      div:hover {
+        box-shadow: 4px 4px 12px 5px #bc5555;
+        width: 600px;
+        background-color: black;
+        transition: all 0.3s;
+      }
+      p {
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        The CSS Box Model is fundamental in CSS. It consists of margins,
+        borders, padding, and the content itself. Understanding this model is
+        key to controlling layout in CSS.
+      </p>
+    </div>
+  </body>
+</html>
