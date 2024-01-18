@@ -12,3 +12,60 @@
     Use flexbox to align these items horizontally and 
     vertically centered within the container.
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style>
+      .flex-container-h {
+        display: flex;
+        flex-direction: row;
+        background-color: palevioletred;
+        /* justify-content: space-between; */
+        /* align-items: flex-end; */
+      }
+      .flex-container-v {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: aqua;
+      }
+      .flex-container-h > div,
+      .flex-container-v > div {
+        width: 100px;
+        height: 150px;
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        border: 10px solid black;
+        padding: 30px;
+        margin: 80px 15px;
+        font-size: 30px;
+        background-color: pink;
+      }
+      .flex-container-h > div:first-child {
+        margin-left: 30px;
+      }
+      .flex-container-h > div:last-child {
+        margin-right: 30px;
+      }
+
+      .flex-container-v > div {
+        background-color: rgb(114, 14, 89);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container-h">
+      <div>flex item-1</div>
+      <div>flex item-2</div>
+      <div>flex item-2</div>
+      <div>flex item-3</div>
+    </div>
+
+    <div class="flex-container-v">
+      <div>flex item-4</div>
+      <div>flex item-5</div>
+      <div>flex item-6</div>
+    </div>
+  </body>
+</html>
