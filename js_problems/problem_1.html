@@ -5,3 +5,59 @@
         When the user clicks the button, 
         display the current date and time on the page.
  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display Current Date and Time</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>Current Date & Time Button</h1>
+    <p id="ShowDate"></p>
+
+    <button type="button" onclick="displayDate()">Show Date</button>
+    <br />
+    <br />
+    <br />
+    <input type="password" placeholder="Password" id="password" />
+    <button type="button" onclick="clearPassword()">Clear Password</button>
+    <button type="button" onclick="suggest()">Suggest Strong Password</button>
+    <button type="button" onclick="togglePassword()" id="toggleBtn">
+      show password
+    </button>
+
+    <!-- <script>
+      alert("tests");
+      alert("tests2");
+    </script> -->
+    <script>
+      function displayDate() {
+        var dateStr = "12/25/2022";
+        var day = new Date(dateStr).getDate();
+        var month = new Date(dateStr).getMonth() + 1;
+        var year = new Date(dateStr).getFullYear();
+        document.getElementById("ShowDate").innerText =
+          day + "#" + month + "#" + year;
+      }
+      function clearPassword() {
+        document.querySelector("#password").value = "";
+      }
+      function randomPassword() {
+        return "some-random-password";
+      }
+      function suggest() {
+        document.querySelector("#password").value = randomPassword();
+        // document.getElementById("password").innerHTML=
+      }
+      function togglePassword() {
+        if (document.querySelector("#password").type == "text") {
+          document.querySelector("#password").type = "password";
+          document.querySelector("#toggleBtn").innerHTML = "show password";
+        } else {
+          document.querySelector("#password").type = "text";
+          document.querySelector("#toggleBtn").innerHTML = "hide password";
+        }
+      }
+    </script>
+  </body>
+</html>
