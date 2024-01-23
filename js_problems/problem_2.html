@@ -5,3 +5,65 @@
         "Green", and "Blue". Clicking each button should change 
         the background color of the page to the respective color.
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Background Color</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+      }
+      .btn {
+        width: 250px;
+        height: 100px;
+        font-size: 60px;
+        border-radius: 35px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2></h2>
+    <button class="btn red" onclick="changeBackgroundColor('red')" id="red">
+      RED
+    </button>
+    <button
+      class="btn green"
+      onclick="changeBackgroundColor('green')"
+      id="green"
+    >
+      GREEN
+    </button>
+    <button class="btn blue" onclick="blueBackground()" id="blue">BLUE</button>
+
+    <script>
+      function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+      function redBackGround() {
+        document.body.style.backgroundColor = "red";
+      }
+
+      function greenBackground() {
+        document.body.style.backgroundColor = "green";
+      }
+
+      function blueBackground() {
+        document.body.style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>
