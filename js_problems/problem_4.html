@@ -5,3 +5,94 @@
         Every time the button is clicked, toggle the 
         visibility of the paragraph.
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Text</title>
+  </head>
+  <body>
+    <h2>Web Development</h2>
+
+    <p id="web-development">
+      Web development refers to the creating, building, and maintaining of
+      websites. It includes aspects such as web design, web publishing, web
+      programming, and database management. It is the creation of an application
+      that works over the internet i.e. websites. The word Web Development is
+      made up of two words, that is: Web: It refers to websites, web pages or
+      anything that works over the internet. Development: It refers to building
+      the application from scratch.
+    </p>
+
+    <h2>Frontend Development</h2>
+    <p>
+      The part of a website where the user interacts directly is termed as front
+      end. It is also referred to as the ‘client side’ of the application.
+    </p>
+
+    <h2>Frontend Technologies</h2>
+    <p>
+      HTML stands for HyperText Markup Language. It is used to design the front
+      end portion of web pages using markup language. It acts as a skeleton for
+      a website since it is used to make the structure of a website.
+    </p>
+
+    <p>
+      Cascading Style Sheets fondly referred to as CSS is a simply designed
+      language intended to simplify the process of making web pages presentable.
+      It is used to style our website.
+    </p>
+
+    <p>
+      JavaScript is a scripting language used to provide a dynamic behavior to
+      our website.
+    </p>
+
+    <p>
+      Bootstrap is a free and open-source tool collection for creating
+      responsive websites and web applications. It is the most popular CSS
+      framework for developing responsive, mobile-first websites. Nowadays, the
+      websites are perfect for all browsers (IE, Firefox, and Chrome) and for
+      all sizes of screens (Desktop, Tablets, Phablets, and Phones).
+    </p>
+
+    <button type="button" onclick="toggle('none')">Hide</button>
+    <button type="button" onclick="toggle('block')">Show</button>
+    <button type="button" onclick="toggle()">Toggle</button>
+
+    <script>
+      var defaultDisplay = "block";
+      function hide() {
+        const nodeList = document.querySelectorAll("p");
+        for (var i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "none";
+        }
+      }
+      function show() {
+        const nodeList = document.querySelectorAll("p");
+        for (var i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "block";
+        }
+      }
+      function toggle(type) {
+        if (type === undefined) {
+          if (defaultDisplay == "block") {
+            defaultDisplay = "none";
+          } else {
+            defaultDisplay = "block";
+          }
+        } else {
+          defaultDisplay = type;
+        }
+
+        const nodeList = document.querySelectorAll("p");
+
+        for (var i = 0; i < nodeList.length; i++) {
+          console.log("DS", defaultDisplay);
+          nodeList[i].style.display = defaultDisplay;
+          console.log("Node ->", nodeList[i].style.display);
+        }
+      }
+    </script>
+  </body>
+</html>
