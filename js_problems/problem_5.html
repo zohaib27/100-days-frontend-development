@@ -5,3 +5,44 @@
         When the button is clicked, change the source of 
         the image to a different image URL.
  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Image Source</title>
+    <style>
+      button {
+        width: 150px;
+        height: 100px;
+        border: 10px solid black;
+        border-radius: 35px;
+        background-color: red;
+        font-size: 30px;
+      }
+      img {
+        width: 700px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>React</h1>
+    <p>
+      React is a JavaScript library created by Facebook React is a User
+      Interface (UI) library React is a tool for building UI components
+    </p>
+
+    <img src="react_img_1.png" alt="react-logo" id="image" />
+    <br />
+    <br />
+
+    <button type="button" onclick="toggleImg()">Toggle-img</button>
+
+    <script>
+      function toggleImg() {
+        var img = document.querySelector("#image");
+        img.src = "img_2.jpg";
+      }
+    </script>
+  </body>
+</html>
